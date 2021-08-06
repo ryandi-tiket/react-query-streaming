@@ -19,11 +19,11 @@ export default async function handler(
   const requestItems = req.body
   console.log(requestItems)
 
-  // wait between 0~5 seconds
+  // wait between 0~3 seconds
   await new Promise((resolve) => {
     setTimeout(() => {
       resolve('')
-    }, Math.random() * 5000)
+    }, Math.random() * 3000)
   })
 
   // 10% chance
