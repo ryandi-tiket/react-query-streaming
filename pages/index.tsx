@@ -7,7 +7,7 @@ export default function Home() {
     () => fetch('/api/initial').then((res) => res.json()),
     {
       onSuccess: () => {
-        console.log('🚦 let’s stream     ', new Date().toLocateDateString())
+        console.log('AYOOOOO', new Date().toLocateDateString())
       },
     }
   )
