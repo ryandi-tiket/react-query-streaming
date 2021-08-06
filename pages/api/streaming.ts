@@ -35,7 +35,7 @@ export default async function handler(
         name: commerce.productName(),
       },
       {
-        name: commerce.productName(),
+        name: commerce.productMaterial(),
       },
     ],
     searchCompleted,
