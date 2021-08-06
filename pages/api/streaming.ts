@@ -37,6 +37,9 @@ export default async function handler(
       {
         name: commerce.productMaterial(),
       },
+      {
+        name: commerce.productName(),
+      },
     ],
     searchCompleted,
     requestItems: [name.firstName(), name.firstName(), name.firstName()],
