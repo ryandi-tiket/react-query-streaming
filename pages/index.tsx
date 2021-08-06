@@ -7,7 +7,7 @@ export default function Home() {
     () => fetch('/api/initial').then((res) => res.json()),
     {
       onSuccess: () => {
-        console.log('🚦 let’s stream     ', new Date().toLocaleTimeString())
+        console.log('🚦 let’s stream     ', new Date().toLocateDateString())
       },
     }
   )
@@ -83,6 +83,7 @@ export default function Home() {
 
   return (
     <div>
+      <h1>HALO</h1>
       <pre>{JSON.stringify(streamingData, null, 2)}</pre>
       <pre>{JSON.stringify(streamingQuery.data?.pages, null, 2)}</pre>
     </div>
